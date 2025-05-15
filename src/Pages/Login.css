@@ -1,0 +1,137 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .login-form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f3f4f6; */
+  }
+  
+  .login-animation-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e0f2fe; */
+    padding: 2rem;
+  }
+  
+  .login-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color:maroon;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    width: 100%;
+    /* background-color: #3b82f6; */
+    background-color: maroon;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: rgb(255, 204, 0);
+  }
+
+ 
+  
+  .popup-icon {
+    font-size: 22px;
+  }
+  .popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: popupAnimation 0.4s ease-out;
+    font-size: 16px;
+  }
+  
+  /* Color styles */
+  .popup-message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid maroon;
+    padding: 50px;
+  }
+  
+  .popup-message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid maroon;
+    padding: 50px;
+  }
+  
+  .popup-icon {
+    font-size: 20px;
+  }
+  
+  /* Animation */
+  @keyframes popupAnimation {
+    from {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-animation-section {
+      display: none; 
+    }
+  }
+  

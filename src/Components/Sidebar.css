@@ -1,0 +1,65 @@
+.sidebar {
+    width: 80px;
+    background-color: maroon;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    transition: width 0.3s ease;
+    position: relative;
+  }
+  
+  .sidebar NavLink:hover {
+    width: 220px;
+  }
+  
+  .sidebar h2.logo {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar:hover h2.logo {
+    opacity: 1;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.7rem;
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .sidebar nav a span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar:hover nav a span {
+    opacity: 1;
+  }
+  
+  .sidebar nav a:hover,
+  .sidebar nav a.active {
+    background-color: gold;
+    color: maroon;
+  }
+  

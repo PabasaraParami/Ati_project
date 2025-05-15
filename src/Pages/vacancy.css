@@ -1,0 +1,83 @@
+
+.vacancy-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.vacancy-header {
+  margin-top: 70px;
+  margin-bottom: -20px;
+}
+
+.vacancy-header h1 {
+  font-size: 2.5rem;
+  color: #fbbf24; 
+  margin-bottom: 10px;
+}
+
+.vacancy-header p {
+  font-size: 1.2rem;
+  color: maroon;
+}
+
+.vacancy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 90px;
+}
+
+.vacancy-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-item h2 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.vacancy-description {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.vacancy-details {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.vacancy-details li {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 5px;
+}
+
+.vacancy-details li strong {
+  font-weight: bold;
+}
+
+/* Apply button styles */
+.apply-button {
+  padding: 10px 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.apply-button:hover {
+  background-color: rgb(255, 204, 0);
+  transition: background-color 0.3s;
+}

@@ -1,0 +1,52 @@
+/* Main container for the layout */
+.home-container {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+  
+  /* Left side content */
+  .left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  /* Title (Welcome Message) */
+  .welcome-title {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #fbbf24; 
+    transition: all 1s ease-in-out;
+  }
+  
+  
+  .welcome-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-text {
+    font-size: 1.120rem; 
+    color: maroon;
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: sans-serif;
+    margin-right: 20px; 
+  }
+  
+  /* Right side content for Lottie animation */
+  .right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  

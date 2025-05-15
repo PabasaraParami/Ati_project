@@ -1,0 +1,56 @@
+.contact-container {
+ 
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #fbbf24; 
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.contact-container p{
+  color: maroon;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  margin:0 auto;
+ 
+  padding-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-container button {
+  padding: 10px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-container button:hover
+{
+  background-color: rgb(255, 204, 0);
+  transition: background-color 0.3s;
+}
+.success-message
+{
+  color: grey;
+
+  padding-top: 10px;
+}
